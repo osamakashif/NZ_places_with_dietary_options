@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Place } from 'src/app/interfaces/Place';
 
 @Component({
   selector: 'app-places-list',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class PlacesListComponent {
 
+  places: Place[] = []
 }

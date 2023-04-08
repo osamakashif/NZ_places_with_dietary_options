@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Place } from 'src/app/interfaces/Place';
 
 @Component({
   selector: 'app-place',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class PlaceComponent {
 
+  @Input() place!: Place; // ! added as otherwise explicit constuction needed
+  
 }
