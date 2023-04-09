@@ -9,6 +9,7 @@ import { PlacesListComponent } from './components/places-list/places-list.compon
 import { HalalListComponent } from './components/halal-list/halal-list.component';
 import { VegetarianListComponent } from './components/vegetarian-list/vegetarian-list.component';
 import { VeganListComponent } from './components/vegan-list/vegan-list.component';
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { VeganListComponent } from './components/vegan-list/vegan-list.component
     PlacesListComponent,
     HalalListComponent,
     VegetarianListComponent,
-    VeganListComponent
+    VeganListComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
