@@ -1,4 +1,4 @@
-<nav mat-tab-nav-bar [tabPanel]="tabPanel" fitInkBarToContent="true">
+<nav mat-tab-nav-bar [tabPanel]="tabPanel">
     <a mat-tab-link *ngFor="let link of links" [routerLink]="link.path"
     routerLinkActive #rla="routerLinkActive"
     [routerLinkActiveOptions]="{exact:true}"
