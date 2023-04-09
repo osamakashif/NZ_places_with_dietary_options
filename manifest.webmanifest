@@ -1,6 +1,6 @@
 {
-  "name": "NZ_places_with_dietary_options",
-  "short_name": "NZ_places_with_dietary_options",
+  "name": "New Zealand Places with Dietary Options",
+  "short_name": "NZ_dietary_option_places",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
