@@ -13,11 +13,12 @@ export class PlaceComponent implements OnInit {
   location: string = ""
 
   ngOnInit(): void {
-    if ((this.place.location as string).includes(this.place.city as string)) {
-      this.location = this.place.location as string
-    } else {
-      this.location = this.place.location + ", " + this.place.city
+    if (this.place.area != undefined) {
+      if ((this.place.area as string).includes(this.place.city as string)) {
+        this.location = this.place.area as string
+      } else {
+        this.location = this.place.area + ", " + this.place.city
+      }
     }
   }
-
 }

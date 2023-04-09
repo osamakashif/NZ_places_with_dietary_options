@@ -16,7 +16,10 @@ export class CreatePlaceService {
         place.city = json_data["City" as keyof object]
       }
       if (json_data["Location" as keyof object] !== "") {
-        place.location = json_data["Location" as keyof object]
+        place.area = json_data["Location" as keyof object]
+      }
+      if (json_data["Map" as keyof object] !== "") {
+        place.map = json_data["Map" as keyof object]
       }
       if (json_data["Cuisine" as keyof object] !== "") {
         place.cuisine = json_data["Cuisine" as keyof object]
