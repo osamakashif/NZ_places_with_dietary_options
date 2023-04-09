@@ -1,14 +1,14 @@
 <div class="card-container">
     <mat-card class="place-card">
         <mat-card-header>
-            <mat-card-title>
+            <mat-card-title style="display: flex;">
                 {{place.name}}
                 <mat-icon class="tag-icon" aria-hidden="false" aria-label="Halal" fontIcon="verified" *ngIf="place.halal"></mat-icon>
                 <mat-icon class="tag-icon" aria-hidden="false" aria-label="Vegetarian" fontIcon="spa"
                     *ngIf="place.vegetarian"></mat-icon>
                 <mat-icon class="tag-icon" aria-hidden="false" aria-label="Vegan" fontIcon="forest" *ngIf="place.vegan"></mat-icon>
             </mat-card-title>
-            <mat-card-subtitle>{{location}}</mat-card-subtitle>
+            <mat-card-subtitle style="display: flex;">{{location}}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
 
