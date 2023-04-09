@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PlaceComponent } from './components/place/place.component';
 import { PlacesListComponent } from './components/places-list/places-list.component';
+import { HalalListComponent } from './components/halal-list/halal-list.component';
+import { VegetarianListComponent } from './components/vegetarian-list/vegetarian-list.component';
+import { VeganListComponent } from './components/vegan-list/vegan-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PlaceComponent,
-    PlacesListComponent
+    PlacesListComponent,
+    HalalListComponent,
+    VegetarianListComponent,
+    VeganListComponent
   ],
   imports: [
     BrowserModule,
