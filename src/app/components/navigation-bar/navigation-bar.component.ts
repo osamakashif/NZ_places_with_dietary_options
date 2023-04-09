@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Link } from 'src/app/interfaces/Link';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class NavigationBarComponent {
 
+  links: Link[] = [{ name: "All", path: "" }, { name: "Halal", path: "Halal" }, { name: "Vegetarian", path: "Vegetarian" }, { name: "Vegan", path: "Vegan" }];
+  
 }
