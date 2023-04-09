@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Place } from 'src/app/interfaces/Place';
-import { JsonConvertorsService } from 'src/app/json-convertors.service';
-// import { csvToJSON } from 'src/helpers/json_convertors';
+import { JsonConvertorsService } from 'src/app/services/json-convertors.service';
+import { DataFetcherService } from 'src/app/services/data-fetcher.service';
+import { CreatePlaceService } from 'src/app/services/create-place.service';
 
 @Component({
   selector: 'app-places-list',
@@ -13,8 +14,11 @@ export class PlacesListComponent implements OnInit {
   places: Place[] = []
 
   ngOnInit(): void {
-    console.log(JsonConvertorsService.csvToJSON('https://docs.google.com/spreadsheets/d/e/2PACX-1vRWVDocfAcQUT6JpCY8kcRkP1kT93JHBTRmmnDa6KyG4TmOq7gfb8FkjXpRnyrOcCthIfBF0I6WULUl/pub?gid=0&single=true&output=csv'));
+    DataFetcherService.readFile('https://docs.google.com/spreadsheets/d/e/2PACX-1vRWVDocfAcQUT6JpCY8kcRkP1kT93JHBTRmmnDa6KyG4TmOq7gfb8FkjXpRnyrOcCthIfBF0I6WULUl/pub?gid=0&single=true&output=tsv').then(res => {
+      let jsonDataArray = JsonConvertorsService.tsvToJSON(res);
+      for (let jsonData of jsonDataArray) {
+        this.places.push(CreatePlaceService.placeFromJSON(jsonData))
+      }
+    })
   }
-
-  // csvToJSON(`https://docs.google.com/spreadsheets/d/e/2PACX-1vRWVDocfAcQUT6JpCY8kcRkP1kT93JHBTRmmnDa6KyG4TmOq7gfb8FkjXpRnyrOcCthIfBF0I6WULUl/pub?gid=0&single=true&output=csv`)
 }
