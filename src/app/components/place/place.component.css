@@ -8,3 +8,9 @@ a:hover {
     color: #3F51B5;
     opacity: 1;
 }
+
+.place-card {
+    max-width: 1000px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
