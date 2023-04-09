@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: '', component: PlacesListComponent },
   { path: 'Halal', component: HalalListComponent },
   { path: 'Vegetarian', component: VegetarianListComponent },
-  { path: 'Vegan', component: VeganListComponent }
+  { path: 'Vegan', component: VeganListComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
