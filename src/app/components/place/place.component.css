@@ -9,8 +9,16 @@ a:hover {
     opacity: 1;
 }
 
+body {
+    text-align: left;
+}
+
 .place-card {
     max-width: 1000px;
     margin-top: 1%;
     margin-bottom: 1%;
+}
+
+.card-container {
+    text-align: -webkit-center;
 }

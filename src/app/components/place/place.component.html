@@ -1,20 +1,24 @@
-<mat-card class="place-card">
-    <mat-card-header>
-        <mat-card-title>
-            {{place.name}}
-            <mat-icon aria-hidden="false" aria-label="Halal" fontIcon="verified" *ngIf="place.halal"></mat-icon>
-            <mat-icon aria-hidden="false" aria-label="Vegetarian" fontIcon="spa" *ngIf="place.vegetarian"></mat-icon>
-            <mat-icon aria-hidden="false" aria-label="Vegan" fontIcon="forest" *ngIf="place.vegan"></mat-icon>
-        </mat-card-title>
-        <mat-card-subtitle>{{location}}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-        <body>{{place.cuisine}}</body>
-    </mat-card-content>
-    <mat-card-actions align="end">
-        <a href={{place.website}} target="_blank" *ngIf="place.website"><mat-icon aria-hidden="false"
-                aria-label="Example home icon" fontIcon="language" *ngIf="place.website"></mat-icon></a>
-        <a href={{place.map}} target="_blank" *ngIf="place.map"><mat-icon aria-hidden="false" aria-label="Vegan"
-                fontIcon="location_on" *ngIf="place.map"></mat-icon></a>
-    </mat-card-actions>
-</mat-card>
+<div class="card-container">
+    <mat-card class="place-card">
+        <mat-card-header>
+            <mat-card-title>
+                {{place.name}}
+                <mat-icon aria-hidden="false" aria-label="Halal" fontIcon="verified" *ngIf="place.halal"></mat-icon>
+                <mat-icon aria-hidden="false" aria-label="Vegetarian" fontIcon="spa"
+                    *ngIf="place.vegetarian"></mat-icon>
+                <mat-icon aria-hidden="false" aria-label="Vegan" fontIcon="forest" *ngIf="place.vegan"></mat-icon>
+            </mat-card-title>
+            <mat-card-subtitle>{{location}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+
+            <body>{{place.cuisine}}</body>
+        </mat-card-content>
+        <mat-card-actions align="end">
+            <a href={{place.website}} target="_blank" *ngIf="place.website"><mat-icon aria-hidden="false"
+                    aria-label="Example home icon" fontIcon="language" *ngIf="place.website"></mat-icon></a>
+            <a href={{place.map}} target="_blank" *ngIf="place.map"><mat-icon aria-hidden="false" aria-label="Vegan"
+                    fontIcon="location_on" *ngIf="place.map"></mat-icon></a>
+        </mat-card-actions>
+    </mat-card>
+</div>
