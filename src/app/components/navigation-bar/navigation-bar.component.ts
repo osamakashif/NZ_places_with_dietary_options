@@ -8,6 +8,6 @@ import { Link } from 'src/app/interfaces/Link';
 })
 export class NavigationBarComponent {
 
-  links: Link[] = [{ name: "All", path: "" }, { name: "Halal", path: "Halal" }, { name: "Vegetarian", path: "Vegetarian" }, { name: "Vegan", path: "Vegan" }];
-  
+  links: Link[] = [{ name: "All", path: "" }, { name: "Halal", path: "Halal", icon: "verified" }, { name: "Vegetarian", path: "Vegetarian", icon: "spa" }, { name: "Vegan", path: "Vegan", icon: "forest" }];
+
 }

@@ -2,6 +2,7 @@
     <a mat-tab-link *ngFor="let link of links" [routerLink]="link.path"
     routerLinkActive #rla="routerLinkActive"
     [routerLinkActiveOptions]="{exact:true}"
-    [active]="rla.isActive"> {{link.name}}</a>
+    [active]="rla.isActive"> {{link.name}} 
+    <mat-icon fontIcon={{link.icon}} *ngIf="link.icon"></mat-icon></a>
 </nav>
 <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
