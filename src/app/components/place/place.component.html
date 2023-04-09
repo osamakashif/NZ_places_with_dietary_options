@@ -3,10 +3,10 @@
         <mat-card-header>
             <mat-card-title>
                 {{place.name}}
-                <mat-icon aria-hidden="false" aria-label="Halal" fontIcon="verified" *ngIf="place.halal"></mat-icon>
-                <mat-icon aria-hidden="false" aria-label="Vegetarian" fontIcon="spa"
+                <mat-icon class="tag-icon" aria-hidden="false" aria-label="Halal" fontIcon="verified" *ngIf="place.halal"></mat-icon>
+                <mat-icon class="tag-icon" aria-hidden="false" aria-label="Vegetarian" fontIcon="spa"
                     *ngIf="place.vegetarian"></mat-icon>
-                <mat-icon aria-hidden="false" aria-label="Vegan" fontIcon="forest" *ngIf="place.vegan"></mat-icon>
+                <mat-icon class="tag-icon" aria-hidden="false" aria-label="Vegan" fontIcon="forest" *ngIf="place.vegan"></mat-icon>
             </mat-card-title>
             <mat-card-subtitle>{{location}}</mat-card-subtitle>
         </mat-card-header>

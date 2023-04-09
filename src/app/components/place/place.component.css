@@ -22,3 +22,7 @@ body {
 .card-container {
     text-align: -webkit-center;
 }
+
+.tag-icon {
+    color: #006400;
+}
