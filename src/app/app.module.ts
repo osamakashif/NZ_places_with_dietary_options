@@ -10,6 +10,8 @@ import { HalalListComponent } from './components/halal-list/halal-list.component
 import { VegetarianListComponent } from './components/vegetarian-list/vegetarian-list.component';
 import { VeganListComponent } from './components/vegan-list/vegan-list.component';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from '@angular/material/tabs'
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { NavigationBarComponent } from './components/navigation-bar/navigation-b
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
