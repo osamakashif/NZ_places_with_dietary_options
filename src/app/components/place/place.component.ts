@@ -19,6 +19,10 @@ export class PlaceComponent implements OnInit {
       } else {
         this.location = this.place.area + ", " + this.place.city
       }
+    } else {
+      if (this.place.city != undefined) {
+        this.location = this.place.city as string
+      }
     }
   }
 }
