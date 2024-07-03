@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { PlaceCardComponent } from '../../components/place-card/place-card.component';
 
 @Component({
   selector: 'app-list-page',
   standalone: true,
-  imports: [],
+  imports: [PlaceCardComponent],
   templateUrl: './list-page.component.html',
   styleUrl: './list-page.component.scss',
 })
