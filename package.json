@@ -1,7 +1,10 @@
 {
   "name": "nz-places-with-dietary-options",
   "version": "0.0.0",
-  "author": {"name": "Osama Kashif", "url": "https://www.linkedin.com/in/osamakashif"},
+  "author": {
+    "name": "Osama Kashif",
+    "url": "https://www.linkedin.com/in/osamakashif"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -19,6 +22,7 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@angular/service-worker": "^18.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
