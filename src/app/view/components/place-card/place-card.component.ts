@@ -16,4 +16,6 @@ export class PlaceCardComponent {
   @Input() vegetarianCertified: boolean = false;
   @Input() vegan: boolean = false;
   @Input() veganCertified: boolean = false;
+  @Input() location: string = '';
+  @Input() city: string = '';
 }
