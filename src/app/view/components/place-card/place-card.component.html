@@ -1,9 +1,13 @@
 <div class="place-card">
   <div>
     <p class="place-card-title">{{ title }}</p>
-    <p>Replace with icons</p>
+    <p *ngIf="halal">Replace with halal icon</p>
+    <p *ngIf="vegetarian">Replace with vegetarian icon</p>
+    <p *ngIf="vegan">Replace with vegan icon</p>
   </div>
-  <p>Other details</p>
+  <p *ngIf="halalCertified">Certified halal</p>
+  <p *ngIf="vegetarianCertified">Certified vegetarian</p>
+  <p *ngIf="veganCertified">Certified vegan</p>
   <div>
     <p>Links</p>
   </div>
