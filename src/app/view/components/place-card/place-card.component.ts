@@ -10,11 +10,11 @@ import { Component, Input } from '@angular/core';
 })
 export class PlaceCardComponent {
   @Input() title: string = 'Title';
-  @Input() halal: boolean = false;
+  @Input() halal: boolean = true;
   @Input() halalCertified: boolean = false;
-  @Input() vegetarian: boolean = false;
+  @Input() vegetarian: boolean = true;
   @Input() vegetarianCertified: boolean = false;
-  @Input() vegan: boolean = false;
+  @Input() vegan: boolean = true;
   @Input() veganCertified: boolean = false;
   @Input() location: string = '';
   @Input() city: string = '';

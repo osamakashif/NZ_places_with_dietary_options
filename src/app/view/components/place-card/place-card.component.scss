@@ -7,3 +7,24 @@
 .place-card-title {
   font-weight: bold;
 }
+
+.diet-icons-container {
+  display: flex;
+}
+
+.diet-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: solid black 1px;
+  border-radius: 100%;
+  min-width: 25px;
+  max-width: 25px;
+  min-height: 25px;
+  max-height: 25px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
