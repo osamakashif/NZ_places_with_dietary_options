@@ -3,3 +3,13 @@
   width: 100%;
   justify-content: space-evenly;
 }
+
+.navbar a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
