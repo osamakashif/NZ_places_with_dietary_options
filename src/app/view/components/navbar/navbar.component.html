@@ -1,14 +1,25 @@
 <nav class="navbar">
-  <a routerLink="/" routerLinkActive="active-link">All</a>
-  <a routerLink="/halal" routerLinkActive="active-link"
+  <a routerLink="/" (click)="updateRoute()" [class]="activeRouteClass('')"
+    >All</a
+  >
+  <a
+    routerLink="/halal"
+    (click)="updateRoute()"
+    [class]="activeRouteClass('halal')"
     ><p>Halal</p>
     <p class="diet-icon">حلال</p></a
   >
-  <a routerLink="/vegetarian" routerLinkActive="active-link"
+  <a
+    routerLink="/vegetarian"
+    (click)="updateRoute()"
+    [class]="activeRouteClass('vegetarian')"
     ><p>Vegetarian</p>
     <p class="diet-icon">V</p></a
   >
-  <a routerLink="/vegan" routerLinkActive="active-link"
+  <a
+    routerLink="/vegan"
+    (click)="updateRoute()"
+    [class]="activeRouteClass('vegan')"
     ><p>Vegan</p>
     <p class="diet-icon">VE</p></a
   >
