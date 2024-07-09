@@ -7,9 +7,29 @@
 .navbar a {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  width: 100%;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: var(--link-colour);
+}
+
+.navbar a:hover {
+  background-color: #f8f8fc;
+}
+
+.navbar .active-link {
+  color: var(--active-link-colour);
+  border-bottom: solid 1px var(--active-link-colour);
+}
+
+.navbar .active-link p {
+  border-color: var(--active-link-colour);
 }
 
 .navbar a p {
   margin-top: 0;
   margin-bottom: 0;
+  border-color: var(--link-colour);
 }
