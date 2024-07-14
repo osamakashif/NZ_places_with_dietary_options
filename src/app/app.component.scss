@@ -16,3 +16,19 @@
 .disclaimer b {
   text-transform: uppercase;
 }
+
+.disclaimer-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: solid black 1px;
+  border-radius: 100%;
+  min-width: 1.25rem;
+  max-width: 1.25rem;
+  min-height: 1.25rem;
+  max-height: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
