@@ -15,4 +15,19 @@ export class ListPageComponent {
   constructor(private router: Router) {
     this.currentOption = this.router.url.split('/')[1];
   }
+
+  getTitle(): string {
+    switch (this.currentOption) {
+      case '':
+        return 'All options';
+      case 'halal':
+        return 'Halal (حلال) options';
+      case 'vegetarian':
+        return 'Vegetarian options';
+      case 'vegan':
+        return 'Vegan options';
+      default:
+        return 'Options';
+    }
+  }
 }
