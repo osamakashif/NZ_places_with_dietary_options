@@ -1,16 +1,23 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { Location } from '@angular/common';
+import { Location, NgFor, NgIf } from '@angular/common';
+import { NavLink } from '../../../domain/nav-link';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, NgFor, NgIf],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
   currentRoute: string = '';
+  navLinks: NavLink[] = [
+    new NavLink('All', '/'),
+    new NavLink('Halal', '/halal', 'حلال'),
+    new NavLink('Vegetarian', '/vegetarian', 'V'),
+    new NavLink('Vegan', '/vegan', 'VE'),
+  ];
 
   constructor(private location: Location) {
     this.refreshRoute();
@@ -27,7 +34,8 @@ export class NavbarComponent {
     }, 0);
   }
 
-  activeRouteClass(route: string): string {
+  activeRouteClass(routeInput: string): string {
+    const route: string = routeInput.split('/')[1];
     return this.currentRoute === route ? 'active-link' : '';
   }
 }
