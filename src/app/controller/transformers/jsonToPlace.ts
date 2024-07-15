@@ -73,8 +73,8 @@ export const jsonToPlace = (json_data: object): Place => {
     if (json_data['Facebook' as keyof object] !== '') {
       facebookLink = json_data['Facebook' as keyof object];
     }
-    if (json_data['Twitter' as keyof object] !== '') {
-      xOrTwitterLink = json_data['Twitter' as keyof object];
+    if (json_data['X_or_Twitter' as keyof object] !== '') {
+      xOrTwitterLink = json_data['X_or_Twitter' as keyof object];
     }
     if (json_data['TikTok' as keyof object] !== '') {
       tiktokLink = json_data['TikTok' as keyof object];

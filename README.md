@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Icons used
+
+- [Link SVG](https://www.svgrepo.com/svg/471611/link-01)
+- [Maps SVG](https://www.svgrepo.com/svg/283294/maps-and-flags-pin)
+- [Instagram SVG](https://www.svgrepo.com/svg/512399/instagram-167)

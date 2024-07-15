@@ -28,3 +28,14 @@
   display: flex;
   align-items: center;
 }
+
+.link-icons a {
+  color: var(--link-colour);
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.link-icons a:hover {
+  color: var(--active-link-colour);
+}
