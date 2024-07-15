@@ -1,18 +1,18 @@
 <div class="place-card">
   <div class="place-card-content">
     <div>
-      <p class="place-card-title">{{ title }}</p>
+      <p class="place-card-title">{{ place.name }}</p>
       <div class="diet-icons-container">
-        <p *ngIf="halal" class="diet-icon">حلال</p>
-        <p *ngIf="vegetarian" class="diet-icon">V</p>
-        <p *ngIf="vegan" class="diet-icon">VE</p>
+        <p *ngIf="place.halal" class="diet-icon">حلال</p>
+        <p *ngIf="place.vegetarian" class="diet-icon">V</p>
+        <p *ngIf="place.vegan" class="diet-icon">VE</p>
       </div>
     </div>
-    <p *ngIf="halalCertified">Certified halal</p>
-    <p *ngIf="vegetarianCertified">Certified vegetarian</p>
-    <p *ngIf="veganCertified">Certified vegan</p>
-    <p>{{ location }}</p>
-    <p>{{ city }}</p>
+    <p *ngIf="place.halalCertified">Certified halal</p>
+    <p *ngIf="place.vegetarianCertified">Certified vegetarian</p>
+    <p *ngIf="place.veganCertified">Certified vegan</p>
+    <p>{{ place.area }}</p>
+    <p>{{ place.city }}</p>
     <div>
       <p>Links</p>
     </div>

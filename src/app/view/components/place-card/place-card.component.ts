@@ -1,5 +1,6 @@
 import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Place } from '../../../domain/place';
 
 @Component({
   selector: 'app-place-card',
@@ -9,13 +10,13 @@ import { Component, Input } from '@angular/core';
   styleUrl: './place-card.component.scss',
 })
 export class PlaceCardComponent {
-  @Input() title: string = 'Title';
-  @Input() halal: boolean = true;
-  @Input() halalCertified: boolean = false;
-  @Input() vegetarian: boolean = true;
-  @Input() vegetarianCertified: boolean = false;
-  @Input() vegan: boolean = true;
-  @Input() veganCertified: boolean = false;
-  @Input() location: string = '';
-  @Input() city: string = '';
+  @Input() place: Place = new Place(
+    '',
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  );
 }
