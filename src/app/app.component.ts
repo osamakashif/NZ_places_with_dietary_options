@@ -10,6 +10,4 @@ import { DisclaimerComponent } from './view/components/disclaimer/disclaimer.com
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'nz-places-with-dietary-options';
-}
+export class AppComponent {}
