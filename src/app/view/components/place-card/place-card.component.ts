@@ -19,4 +19,17 @@ export class PlaceCardComponent {
     false,
     false
   );
+
+  getLocation(): string {
+    let location: string = '';
+    if (this.place.area) {
+      location = this.place.area;
+    }
+    if (this.place.city) {
+      location === ''
+        ? (location = this.place.city)
+        : (location += ', ' + this.place.city);
+    }
+    return location;
+  }
 }

@@ -11,8 +11,9 @@
     <p *ngIf="place.halalCertified">Certified halal</p>
     <p *ngIf="place.vegetarianCertified">Certified vegetarian</p>
     <p *ngIf="place.veganCertified">Certified vegan</p>
-    <p>{{ place.area }}</p>
-    <p>{{ place.city }}</p>
+    <p *ngIf="place.area || place.city">
+      {{ getLocation() }}
+    </p>
     <div class="link-icons">
       <a
         *ngIf="place.websiteLink"
