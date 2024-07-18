@@ -29,6 +29,11 @@
   align-items: center;
 }
 
+.link-icons {
+  display: flex;
+  align-items: center;
+}
+
 .link-icons a {
   color: var(--link-colour);
   text-decoration: none;

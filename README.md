@@ -31,3 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [Link SVG](https://www.svgrepo.com/svg/471611/link-01)
 - [Maps SVG](https://www.svgrepo.com/svg/283294/maps-and-flags-pin)
 - [Instagram SVG](https://www.svgrepo.com/svg/512399/instagram-167)
+- [TikTok SVG](https://www.svgrepo.com/svg/473806/tiktok)
+- [X or Twitter SVG](https://icons8.com/icon/YfCbGWCWcuar/twitterx)
+- [Facebook SVG](https://www.svgrepo.com/svg/506656/facebook)
+- [YouTube SVG](https://www.svgrepo.com/svg/486513/youtube-filled)

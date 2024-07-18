@@ -43,7 +43,7 @@
         rel="noopener noreferrer"
         [ariaLabel]="place.name + ' post link.'"
         [href]="place.postLink"
-        >Links</a
+        >Post</a
       >
       <a
         *ngIf="place.youtubeLink"
@@ -51,8 +51,37 @@
         rel="noopener noreferrer"
         [ariaLabel]="place.name + ' YouTube link.'"
         [href]="place.youtubeLink"
-        >Links</a
-      >
+        ><svg
+          viewBox="0 0 512 512"
+          version="1.1"
+          height="20px"
+          width="20px"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          fill="#000000"
+        >
+          <g stroke-width="0"></g>
+          <g stroke-linecap="round" stroke-linejoin="round"></g>
+          <g
+            id="Page-1"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g
+              id="icon"
+              fill="currentColor"
+              transform="translate(42.666738, 106.667236)"
+            >
+              <path
+                d="M214.304705,0.000543068834 C226.424729,0.0216871426 348.414862,0.444568619 380.010595,8.90219814 C398.378595,13.7775234 412.821262,28.1915286 417.749262,46.6329765 C426.309902,78.5811951 426.652328,143.739282 426.666025,148.900811 L426.666025,149.553735 C426.652328,154.730893 426.309902,220.084332 417.749262,252.032551 C412.821262,270.473998 398.378595,284.888004 380.010595,289.763329 C347.417102,298.488042 218.629945,298.662536 213.491496,298.666026 L213.175003,298.666026 C208.035726,298.662536 79.2276622,298.488042 46.6132622,289.763329 C28.2665955,284.888004 13.8025955,270.473998 8.89592883,252.032551 C0.355768832,220.084332 0.014162432,154.730893 0.000498176,149.553735 L0.000498176,148.900811 C0.014162432,143.739282 0.355768832,78.5811951 8.89592883,46.6329765 C13.8025955,28.1915286 28.2665955,13.7775234 46.6132622,8.90219814 C78.2292622,0.444568619 200.239662,0.0216871426 212.361662,0.000543068834 Z M169.685262,86.2714908 L169.685262,212.394036 L281.215929,149.226778 L169.685262,86.2714908 Z"
+                id="Shape"
+              ></path>
+            </g>
+          </g>
+        </svg>
+      </a>
       <a
         *ngIf="place.instagramLink"
         target="_blank"
@@ -96,7 +125,7 @@
         rel="noopener noreferrer"
         [ariaLabel]="place.name + ' Picuki link.'"
         [href]="place.picukiLink"
-        >Links</a
+        >Picuki</a
       >
       <a
         *ngIf="place.facebookLink"
@@ -104,24 +133,62 @@
         rel="noopener noreferrer"
         [ariaLabel]="place.name + ' Facebook link.'"
         [href]="place.facebookLink"
-        >Links</a
-      >
+        ><svg
+          fill="currentColor"
+          height="20px"
+          width="20px"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g stroke-width="0"></g>
+          <g stroke-linecap="round" stroke-linejoin="round"></g>
+          <path
+            d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"
+          ></path>
+        </svg>
+      </a>
       <a
         *ngIf="place.xOrTwitterLink"
         target="_blank"
         rel="noopener noreferrer"
         [ariaLabel]="place.name + ' X or Twitter link.'"
         [href]="place.xOrTwitterLink"
-        >Links</a
-      >
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          fill="currentColor"
+          height="20px"
+          width="20px"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"
+          ></path>
+        </svg>
+      </a>
       <a
         *ngIf="place.tiktokLink"
         target="_blank"
         rel="noopener noreferrer"
         [ariaLabel]="place.name + ' TikTok link.'"
         [href]="place.tiktokLink"
-        >Links</a
       >
+        <svg
+          fill="currentColor"
+          height="20px"
+          width="20px"
+          viewBox="0 0 32 32"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g stroke-width="0"></g>
+          <g stroke-linecap="round" stroke-linejoin="round"></g>
+          <path
+            d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"
+          ></path>
+        </svg>
+      </a>
       <a
         *ngIf="place.mapLink"
         target="_blank"
