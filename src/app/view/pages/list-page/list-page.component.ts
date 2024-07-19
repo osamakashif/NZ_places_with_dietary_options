@@ -50,24 +50,34 @@ export class ListPageComponent {
     }
   }
 
+  private sortPlacesByName(placeA: Place, placeB: Place): number {
+    return placeA.name > placeB.name ? 1 : -1;
+  }
+
   getPlaces(): Place[] {
     switch (this.currentOption) {
       case '':
-        return this.places;
+        return this.places.sort(this.sortPlacesByName);
       case 'halal':
-        return this.places.filter((place) => {
-          return place.halal;
-        });
+        return this.places
+          .filter((place) => {
+            return place.halal;
+          })
+          .sort(this.sortPlacesByName);
       case 'vegetarian':
-        return this.places.filter((place) => {
-          return place.vegetarian;
-        });
+        return this.places
+          .filter((place) => {
+            return place.vegetarian;
+          })
+          .sort(this.sortPlacesByName);
       case 'vegan':
-        return this.places.filter((place) => {
-          return place.vegan;
-        });
+        return this.places
+          .filter((place) => {
+            return place.vegan;
+          })
+          .sort(this.sortPlacesByName);
       default:
-        return this.places;
+        return this.places.sort(this.sortPlacesByName);
     }
   }
 }
