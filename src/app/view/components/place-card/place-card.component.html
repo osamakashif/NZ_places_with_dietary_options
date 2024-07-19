@@ -8,6 +8,7 @@
         <p *ngIf="place.vegan" class="diet-icon">VE</p>
       </div>
     </div>
+    <p *ngIf="place.cuisine">{{ place.cuisine }}</p>
     <p *ngIf="place.halalCertified">Certified halal</p>
     <p *ngIf="place.vegetarianCertified">Certified vegetarian</p>
     <p *ngIf="place.veganCertified">Certified vegan</p>
