@@ -17,6 +17,7 @@ export class NavbarComponent {
     new NavLink('Halal', '/halal', 'حلال'),
     new NavLink('Vegetarian', '/vegetarian', 'V'),
     new NavLink('Vegan', '/vegan', 'VE'),
+    new NavLink('Gluten Free', '/gluten-free', 'GF'),
   ];
 
   constructor(private location: Location) {

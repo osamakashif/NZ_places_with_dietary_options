@@ -17,6 +17,8 @@ export class PlaceCardComponent {
     false,
     false,
     false,
+    false,
+    false,
     false
   );
 

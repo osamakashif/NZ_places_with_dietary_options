@@ -6,6 +6,8 @@ export class Place {
   vegetarianCertified: boolean;
   vegan: boolean;
   veganCertified: boolean;
+  glutenFree: boolean;
+  glutenFreeCertified: boolean;
   websiteLink?: string;
   postLink?: string;
   youtubeLink?: string;
@@ -27,6 +29,8 @@ export class Place {
     vegetarianCertified: boolean,
     vegan: boolean,
     veganCertified: boolean,
+    glutenFree: boolean,
+    glutenFreeCertified: boolean,
     websiteLink?: string,
     postLink?: string,
     youtubeLink?: string,
@@ -44,11 +48,15 @@ export class Place {
     this.halalCertified = halalCertified;
     this.vegetarianCertified = vegetarianCertified;
     this.veganCertified = veganCertified;
+    this.glutenFreeCertified = glutenFreeCertified;
     halalCertified ? (this.halal = halalCertified) : (this.halal = halal);
     vegetarianCertified
       ? (this.vegetarian = vegetarianCertified)
       : (this.vegetarian = vegetarian);
     veganCertified ? (this.vegan = veganCertified) : (this.vegan = vegan);
+    glutenFreeCertified
+      ? (this.glutenFree = glutenFreeCertified)
+      : (this.glutenFree = glutenFree);
     if (websiteLink) {
       this.websiteLink = websiteLink;
     }

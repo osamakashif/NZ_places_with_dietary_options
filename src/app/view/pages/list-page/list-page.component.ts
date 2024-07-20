@@ -56,6 +56,8 @@ export class ListPageComponent {
         return 'Vegetarian options';
       case 'vegan':
         return 'Vegan options';
+      case 'gluten-free':
+        return 'Gluten free options';
       default:
         return 'Options';
     }
@@ -82,7 +84,8 @@ export class ListPageComponent {
           return (
             place.halalCertified ||
             place.vegetarianCertified ||
-            place.veganCertified
+            place.veganCertified ||
+            place.glutenFreeCertified
           );
         })
       : sortedPlaces;
@@ -107,6 +110,10 @@ export class ListPageComponent {
       case 'vegan':
         return this.places.filter((place) => {
           return place.vegan;
+        });
+      case 'gluten-free':
+        return this.places.filter((place) => {
+          return place.glutenFree;
         });
       default:
         return this.places;

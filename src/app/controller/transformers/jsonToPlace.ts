@@ -8,6 +8,8 @@ export const jsonToPlace = (json_data: object): Place => {
   let vegetarianCertified: boolean = false;
   let vegan: boolean = false;
   let veganCertified: boolean = false;
+  let glutenFree: boolean = false;
+  let glutenFreeCertified: boolean = false;
   let websiteLink: string | undefined = undefined;
   let postLink: string | undefined = undefined;
   let youtubeLink: string | undefined = undefined;
@@ -54,6 +56,19 @@ export const jsonToPlace = (json_data: object): Place => {
       )?.toLowerCase() === 'y'
     ) {
       veganCertified = true;
+    }
+    if (
+      (json_data['Gluten_Free' as keyof object] as string)?.toLowerCase() ===
+      'y'
+    ) {
+      glutenFree = true;
+    }
+    if (
+      (
+        json_data['Gluten_Free_Certified' as keyof object] as string
+      )?.toLowerCase() === 'y'
+    ) {
+      glutenFreeCertified = true;
     }
     if (json_data['Website' as keyof object] !== '') {
       websiteLink = json_data['Website' as keyof object];
@@ -102,6 +117,8 @@ export const jsonToPlace = (json_data: object): Place => {
     vegetarianCertified,
     vegan,
     veganCertified,
+    glutenFree,
+    glutenFreeCertified,
     websiteLink,
     postLink,
     youtubeLink,
