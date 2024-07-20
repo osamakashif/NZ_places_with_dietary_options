@@ -5,18 +5,19 @@ import { Place } from '../../../domain/place';
 import { jsonToPlace } from '../../../controller/transformers/jsonToPlace';
 import { tsvToJSON } from '../../../controller/transformers/tsvToJson';
 import { readTsv } from '../../../controller/helpers/read-file';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-list-page',
   standalone: true,
-  imports: [PlaceCardComponent, NgFor],
+  imports: [PlaceCardComponent, NgFor, NgIf],
   templateUrl: './list-page.component.html',
   styleUrl: './list-page.component.scss',
 })
 export class ListPageComponent {
   currentOption: string = '';
   places: Place[] = [];
+  certifiedOnly: boolean = false;
 
   constructor(private router: Router) {
     this.currentOption = this.router.url.split('/')[1];
@@ -52,6 +53,19 @@ export class ListPageComponent {
 
   private sortPlacesByName(placeA: Place, placeB: Place): number {
     return placeA.name > placeB.name ? 1 : -1;
+  }
+
+  getSortedFilteredPlaces(): Place[] {
+    const sortedPlaces = this.getSortedPlaces();
+    return this.certifiedOnly
+      ? sortedPlaces.filter((place: Place) => {
+          return (
+            place.halalCertified ||
+            place.vegetarianCertified ||
+            place.veganCertified
+          );
+        })
+      : sortedPlaces;
   }
 
   getSortedPlaces(): Place[] {

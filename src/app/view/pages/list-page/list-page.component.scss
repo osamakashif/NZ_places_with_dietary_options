@@ -7,3 +7,38 @@
   margin-left: 10%;
   margin-right: 10%;
 }
+
+.check-option-container {
+  display: flex;
+  align-items: center;
+}
+
+.check-button {
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: solid 2px var(--active-link-colour);
+  margin-inline-start: 5px;
+}
+
+.check-button:hover {
+  cursor: pointer;
+  background-color: var(--shaded-background-colour);
+}
+
+.check-active {
+  background-color: var(--shaded-background-colour);
+}
+
+.check-active:hover {
+  background-color: transparent;
+}
+
+.tick-icon {
+  stroke: var(--active-link-colour);
+}

@@ -1,7 +1,29 @@
 <h1 class="list-title">{{ getTitle() }}</h1>
 <div class="options-list">
+  <div class="check-option-container">
+    <p>Certified only</p>
+    <button
+      aria-label="Certified only toggle"
+      [class]="'check-button' + (certifiedOnly ? ' check-active' : '')"
+      (click)="certifiedOnly = !certifiedOnly"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        stroke-width="4"
+        stroke-linecap="round"
+        class="tick-icon"
+        *ngIf="certifiedOnly"
+      >
+        <line x1="2" y1="12" x2="6" y2="18" />
+        <line x1="6" y1="18" x2="21" y2="6" />
+      </svg>
+    </button>
+  </div>
   <app-place-card
-    *ngFor="let place of getSortedPlaces()"
+    *ngFor="let place of getSortedFilteredPlaces()"
     [place]="place"
   ></app-place-card>
 </div>
