@@ -19,10 +19,18 @@ export class ListPageComponent {
   places: Place[] = [];
   certifiedOnly: boolean = false;
   loading: boolean = true;
+  private localStorageCertifiedSettingsKey: string =
+    'nz-places-with-dietary-options-certified-settings';
 
   constructor(private router: Router) {
     this.currentOption = this.router.url.split('/')[1];
     this.loadPlaces();
+    const certifiedSettings: string | null = localStorage.getItem(
+      this.localStorageCertifiedSettingsKey
+    );
+    if (certifiedSettings) {
+      this.certifiedOnly = true;
+    }
   }
 
   private loadPlaces() {
@@ -51,6 +59,16 @@ export class ListPageComponent {
       default:
         return 'Options';
     }
+  }
+
+  toggleCertifiedOnly() {
+    this.certifiedOnly = !this.certifiedOnly;
+    this.certifiedOnly
+      ? localStorage.setItem(
+          this.localStorageCertifiedSettingsKey,
+          'certified-only'
+        )
+      : localStorage.clear();
   }
 
   private sortPlacesByName(placeA: Place, placeB: Place): number {

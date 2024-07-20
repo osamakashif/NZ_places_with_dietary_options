@@ -9,7 +9,7 @@
     <button
       aria-label="Certified only toggle"
       [class]="'check-button' + (certifiedOnly ? ' check-active' : '')"
-      (click)="certifiedOnly = !certifiedOnly"
+      (click)="toggleCertifiedOnly()"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
