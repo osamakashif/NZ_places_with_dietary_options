@@ -26,7 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
-## Icons used (obtained from [SVG Repo](https://www.svgrepo.com))
+## Icons used (obtained from [SVG Repo](https://www.svgrepo.com) and [Icons 8](https://icons8.com/icons))
 
 - [Link SVG](https://www.svgrepo.com/svg/471611/link-01)
 - [Maps SVG](https://www.svgrepo.com/svg/283294/maps-and-flags-pin)
@@ -37,3 +37,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [YouTube SVG](https://www.svgrepo.com/svg/486513/youtube-filled)
 - [File SVG](https://www.svgrepo.com/svg/513144/file-1)
 - [Media SVG](https://www.svgrepo.com/svg/446256/media)
+
+### Licenses for icons used
+
+- [CC0 License](https://www.svgrepo.com/page/licensing/#CC0)
+- [PD License](https://www.svgrepo.com/page/licensing/#PD)
+- [Logo License](https://www.svgrepo.com/page/licensing/#Logo)
+- [MIT License](https://www.svgrepo.com/page/licensing/#MIT)
+- [CC Attribution License](https://www.svgrepo.com/page/licensing/#CC%20Attribution)
