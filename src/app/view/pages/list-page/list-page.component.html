@@ -1,7 +1,7 @@
 <h1 class="list-title">{{ getTitle() }}</h1>
 <div class="options-list">
   <app-place-card
-    *ngFor="let place of getPlaces()"
+    *ngFor="let place of getSortedPlaces()"
     [place]="place"
   ></app-place-card>
 </div>

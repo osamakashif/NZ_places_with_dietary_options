@@ -54,30 +54,28 @@ export class ListPageComponent {
     return placeA.name > placeB.name ? 1 : -1;
   }
 
-  getPlaces(): Place[] {
+  getSortedPlaces(): Place[] {
+    return this.getPlaces().sort(this.sortPlacesByName);
+  }
+
+  private getPlaces(): Place[] {
     switch (this.currentOption) {
       case '':
-        return this.places.sort(this.sortPlacesByName);
+        return this.places;
       case 'halal':
-        return this.places
-          .filter((place) => {
-            return place.halal;
-          })
-          .sort(this.sortPlacesByName);
+        return this.places.filter((place) => {
+          return place.halal;
+        });
       case 'vegetarian':
-        return this.places
-          .filter((place) => {
-            return place.vegetarian;
-          })
-          .sort(this.sortPlacesByName);
+        return this.places.filter((place) => {
+          return place.vegetarian;
+        });
       case 'vegan':
-        return this.places
-          .filter((place) => {
-            return place.vegan;
-          })
-          .sort(this.sortPlacesByName);
+        return this.places.filter((place) => {
+          return place.vegan;
+        });
       default:
-        return this.places.sort(this.sortPlacesByName);
+        return this.places;
     }
   }
 }
