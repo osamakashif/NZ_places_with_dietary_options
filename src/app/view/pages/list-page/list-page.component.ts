@@ -18,6 +18,7 @@ export class ListPageComponent {
   currentOption: string = '';
   places: Place[] = [];
   certifiedOnly: boolean = false;
+  loading: boolean = true;
 
   constructor(private router: Router) {
     this.currentOption = this.router.url.split('/')[1];
@@ -33,6 +34,7 @@ export class ListPageComponent {
         let placeToAdd: Place = jsonToPlace(jsonData);
         this.places.push(placeToAdd);
       }
+      this.loading = false;
     });
   }
 

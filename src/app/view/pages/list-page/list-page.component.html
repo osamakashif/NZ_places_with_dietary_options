@@ -1,5 +1,9 @@
 <h1 class="list-title">{{ getTitle() }}</h1>
-<div class="options-list">
+<div *ngIf="loading" class="loading-container">
+  <div class="circle-loader"></div>
+  <p>Loading...</p>
+</div>
+<div *ngIf="!loading" class="options-list">
   <div class="check-option-container">
     <p>Certified only</p>
     <button
