@@ -35,3 +35,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [X or Twitter SVG](https://icons8.com/icon/YfCbGWCWcuar/twitterx)
 - [Facebook SVG](https://www.svgrepo.com/svg/506656/facebook)
 - [YouTube SVG](https://www.svgrepo.com/svg/486513/youtube-filled)
+- [File SVG](https://www.svgrepo.com/svg/513144/file-1)
