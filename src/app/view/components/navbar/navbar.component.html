@@ -4,7 +4,10 @@
     routerLink="{{ navLink.path }}"
     (click)="updateRoute()"
     [class]="activeRouteClass(navLink.path)"
-    ><p>{{ navLink.name }}</p>
-    <p class="diet-icon" *ngIf="navLink.icon">{{ navLink.icon }}</p></a
+  >
+    <p [class]="widthLimitTextClass(navLink)">{{ navLink.name }}</p>
+    <p [ariaLabel]="navLink.name" class="diet-icon" *ngIf="navLink.icon">
+      {{ navLink.icon }}
+    </p></a
   >
 </nav>

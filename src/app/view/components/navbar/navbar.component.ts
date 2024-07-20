@@ -39,4 +39,8 @@ export class NavbarComponent {
     const route: string = routeInput.split('/')[1];
     return this.currentRoute === route ? 'active-link' : '';
   }
+
+  widthLimitTextClass(navLink: NavLink): string {
+    return navLink.icon ? 'icon-only' : '';
+  }
 }
