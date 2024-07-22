@@ -21,6 +21,8 @@ export class ListPageComponent {
   loading: boolean = true;
   private localStorageCertifiedSettingsKey: string =
     'nz-places-with-dietary-options-certified-settings';
+  private readonly tsvLink: string =
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vRWVDocfAcQUT6JpCY8kcRkP1kT93JHBTRmmnDa6KyG4TmOq7gfb8FkjXpRnyrOcCthIfBF0I6WULUl/pub?gid=0&single=true&output=tsv';
 
   constructor(private router: Router) {
     this.currentOption = this.router.url.split('/')[1];
@@ -34,9 +36,7 @@ export class ListPageComponent {
   }
 
   private loadPlaces() {
-    readTsv(
-      'https://docs.google.com/spreadsheets/d/e/2PACX-1vRWVDocfAcQUT6JpCY8kcRkP1kT93JHBTRmmnDa6KyG4TmOq7gfb8FkjXpRnyrOcCthIfBF0I6WULUl/pub?gid=0&single=true&output=tsv'
-    ).then((res) => {
+    readTsv(this.tsvLink).then((res) => {
       let jsonDataArray = tsvToJSON(res);
       for (let jsonData of jsonDataArray) {
         let placeToAdd: Place = jsonToPlace(jsonData);
