@@ -52,7 +52,7 @@ export class ListPageComponent {
         let placeToAdd: Place = jsonToPlace(jsonData);
         newPlaces.push(placeToAdd);
       }
-      this.places = newPlaces;
+      this.places = newPlaces.sort(this.sortPlacesByName);
       localStorage.setItem(
         this.localStoragePlacesKey,
         JSON.stringify(this.places)
@@ -85,15 +85,15 @@ export class ListPageComponent {
           this.localStorageCertifiedSettingsKey,
           'certified-only'
         )
-      : localStorage.clear();
+      : localStorage.removeItem(this.localStorageCertifiedSettingsKey);
   }
 
   private sortPlacesByName(placeA: Place, placeB: Place): number {
     return placeA.name > placeB.name ? 1 : -1;
   }
 
-  getSortedFilteredPlaces(): Place[] {
-    const sortedPlaces = this.getSortedPlaces();
+  getCertificationFilteredPlaces(): Place[] {
+    const sortedPlaces = this.getOptionFilteredPlaces();
     return this.certifiedOnly
       ? sortedPlaces.filter((place: Place) => {
           return (
@@ -106,11 +106,7 @@ export class ListPageComponent {
       : sortedPlaces;
   }
 
-  getSortedPlaces(): Place[] {
-    return this.getPlaces().sort(this.sortPlacesByName);
-  }
-
-  private getPlaces(): Place[] {
+  private getOptionFilteredPlaces(): Place[] {
     switch (this.currentOption) {
       case '':
         return this.places;
