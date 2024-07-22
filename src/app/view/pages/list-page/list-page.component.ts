@@ -19,7 +19,9 @@ export class ListPageComponent {
   places: Place[] = [];
   certifiedOnly: boolean = false;
   loading: boolean = true;
-  private localStorageCertifiedSettingsKey: string =
+  private readonly localStoragePlacesKey: string =
+    'nz-places-with-dietary-options-places';
+  private readonly localStorageCertifiedSettingsKey: string =
     'nz-places-with-dietary-options-certified-settings';
   private readonly tsvLink: string =
     'https://docs.google.com/spreadsheets/d/e/2PACX-1vRWVDocfAcQUT6JpCY8kcRkP1kT93JHBTRmmnDa6KyG4TmOq7gfb8FkjXpRnyrOcCthIfBF0I6WULUl/pub?gid=0&single=true&output=tsv';
@@ -36,12 +38,25 @@ export class ListPageComponent {
   }
 
   private loadPlaces() {
+    const placesInStorage: string | null = localStorage.getItem(
+      this.localStoragePlacesKey
+    );
+    if (placesInStorage) {
+      this.places = JSON.parse(placesInStorage);
+      this.loading = false;
+    }
     readTsv(this.tsvLink).then((res) => {
       let jsonDataArray = tsvToJSON(res);
+      let newPlaces: Place[] = [];
       for (let jsonData of jsonDataArray) {
         let placeToAdd: Place = jsonToPlace(jsonData);
-        this.places.push(placeToAdd);
+        newPlaces.push(placeToAdd);
       }
+      this.places = newPlaces;
+      localStorage.setItem(
+        this.localStoragePlacesKey,
+        JSON.stringify(this.places)
+      );
       this.loading = false;
     });
   }
