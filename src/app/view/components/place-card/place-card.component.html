@@ -6,12 +6,14 @@
         <p *ngIf="place.halal" class="diet-icon">حلال</p>
         <p *ngIf="place.vegetarian" class="diet-icon">V</p>
         <p *ngIf="place.vegan" class="diet-icon">VE</p>
+        <p *ngIf="place.glutenFree" class="diet-icon">GF</p>
       </div>
     </div>
     <p *ngIf="place.cuisine">{{ place.cuisine }}</p>
     <p *ngIf="place.halalCertified">Certified halal</p>
     <p *ngIf="place.vegetarianCertified">Certified vegetarian</p>
     <p *ngIf="place.veganCertified">Certified vegan</p>
+    <p *ngIf="place.glutenFreeCertified">Certified gluten free</p>
     <p *ngIf="place.area || place.city">
       {{ getLocation() }}
     </p>
