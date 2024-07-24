@@ -1,0 +1,18 @@
+.content {
+  margin-top: 175px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.route-content {
+  width: 100%;
+}
+
+@media only screen and (max-width: 585px) {
+  .content {
+    margin-top: 210px;
+  }
+}

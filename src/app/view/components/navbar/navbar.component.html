@@ -1,0 +1,13 @@
+<nav class="navbar">
+  <a
+    *ngFor="let navLink of navLinks"
+    routerLink="{{ navLink.path }}"
+    (click)="updateRoute()"
+    [class]="activeRouteClass(navLink.path)"
+  >
+    <p [class]="widthLimitTextClass(navLink)">{{ navLink.name }}</p>
+    <p [ariaLabel]="navLink.name" class="diet-icon" *ngIf="navLink.icon">
+      {{ navLink.icon }}
+    </p></a
+  >
+</nav>

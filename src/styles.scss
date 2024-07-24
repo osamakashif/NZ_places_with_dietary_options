@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --active-link-colour: #324099;
+  --link-colour: #494949;
+  --shaded-background-colour: #f8f8fc;
+  --accent-color: #006400;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.diet-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: black;
+  border-color: black;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 100%;
+  min-width: 1.5rem;
+  max-width: 1.5rem;
+  min-height: 1.5rem;
+  max-height: 1.5rem;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

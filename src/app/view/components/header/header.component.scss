@@ -1,0 +1,14 @@
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background: #ffffff;
+}
+
+.title {
+  text-align: center;
+  font-weight: normal;
+  padding-top: 15px;
+  color: var(--active-link-colour);
+}

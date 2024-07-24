@@ -1,0 +1,46 @@
+.place-card {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-bottom: 40px;
+}
+
+.place-card-content {
+  padding: 20px;
+}
+
+.place-card-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.diet-icons-container {
+  display: flex;
+}
+
+.diet-icons-container .diet-icon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+.title-and-diet-icons {
+  display: flex;
+  align-items: center;
+}
+
+.link-icons {
+  display: flex;
+  align-items: center;
+}
+
+.link-icons a {
+  color: var(--link-colour);
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.link-icons a:hover {
+  color: var(--active-link-colour);
+}

@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: var(--link-colour);
+}
+
+.navbar a:hover {
+  background-color: var(--shaded-background-colour);
+}
+
+.navbar .active-link {
+  color: var(--active-link-colour);
+  border-bottom: solid 2px var(--active-link-colour);
+  font-weight: bold;
+}
+
+.navbar .active-link .diet-icon {
+  border-color: var(--active-link-colour);
+  background-color: var(--active-link-colour);
+}
+
+.navbar a p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar a .diet-icon {
+  border-color: var(--link-colour);
+  background-color: var(--link-colour);
+}
+
+@media only screen and (max-width: 649px) {
+  .icon-only {
+    display: none;
+  }
+}
