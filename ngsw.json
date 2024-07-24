@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1721820823863,
-  "index": "/index.html",
+  "timestamp": 1721821063441,
+  "index": "/NZ_places_with_dietary_options/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/favicon.ico",
-        "/index.html",
-        "/main-3YZJNTWL.js",
-        "/manifest.webmanifest",
-        "/polyfills-6EAL64PA.js",
-        "/styles-IH3YBUOV.css"
+        "/NZ_places_with_dietary_options/favicon.ico",
+        "/NZ_places_with_dietary_options/index.html",
+        "/NZ_places_with_dietary_options/main-3YZJNTWL.js",
+        "/NZ_places_with_dietary_options/manifest.webmanifest",
+        "/NZ_places_with_dietary_options/polyfills-6EAL64PA.js",
+        "/NZ_places_with_dietary_options/styles-IH3YBUOV.css"
       ],
       "patterns": []
     },
@@ -28,34 +28,34 @@
         "ignoreVary": true
       },
       "urls": [
-        "/icons/icon-128x128.png",
-        "/icons/icon-144x144.png",
-        "/icons/icon-152x152.png",
-        "/icons/icon-192x192.png",
-        "/icons/icon-384x384.png",
-        "/icons/icon-512x512.png",
-        "/icons/icon-72x72.png",
-        "/icons/icon-96x96.png"
+        "/NZ_places_with_dietary_options/icons/icon-128x128.png",
+        "/NZ_places_with_dietary_options/icons/icon-144x144.png",
+        "/NZ_places_with_dietary_options/icons/icon-152x152.png",
+        "/NZ_places_with_dietary_options/icons/icon-192x192.png",
+        "/NZ_places_with_dietary_options/icons/icon-384x384.png",
+        "/NZ_places_with_dietary_options/icons/icon-512x512.png",
+        "/NZ_places_with_dietary_options/icons/icon-72x72.png",
+        "/NZ_places_with_dietary_options/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/favicon.ico": "e7957ff832cb821589360a02c3db5cbdf0b4399e",
-    "/icons/icon-128x128.png": "3a87a96321173824a40745f492b30f25fe350b29",
-    "/icons/icon-144x144.png": "4a7f9913aba4d1401559963f788be8f57eab0737",
-    "/icons/icon-152x152.png": "f41500437e06f637370138f5600ad0e5b69fc9e7",
-    "/icons/icon-192x192.png": "ed92072c843111fd0399b985b3605d20ae40b053",
-    "/icons/icon-384x384.png": "5058a9984215c3259c3945e74240547e010f5d1f",
-    "/icons/icon-512x512.png": "d15968aece4c30964a5157100f035fcc538badb8",
-    "/icons/icon-72x72.png": "1ebf62d1e9562e47723406af6d31b3b5372d1d4a",
-    "/icons/icon-96x96.png": "02888e2fdcff6c46d8b4528b53fda040ae28c56c",
-    "/index.html": "790dde1dd6167f199a477aaa4c5309112553d9e2",
-    "/main-3YZJNTWL.js": "857a59616d08d02c0d243c13f73313a90a83c549",
-    "/manifest.webmanifest": "b4c501704086ea267ba1d6850f03b71841951233",
-    "/polyfills-6EAL64PA.js": "d874147a12a6570d9b44e99935e9de8b7f3cabbc",
-    "/styles-IH3YBUOV.css": "889367b3f7073389496672bd22673cb1df768008"
+    "/NZ_places_with_dietary_options/favicon.ico": "e7957ff832cb821589360a02c3db5cbdf0b4399e",
+    "/NZ_places_with_dietary_options/icons/icon-128x128.png": "3a87a96321173824a40745f492b30f25fe350b29",
+    "/NZ_places_with_dietary_options/icons/icon-144x144.png": "4a7f9913aba4d1401559963f788be8f57eab0737",
+    "/NZ_places_with_dietary_options/icons/icon-152x152.png": "f41500437e06f637370138f5600ad0e5b69fc9e7",
+    "/NZ_places_with_dietary_options/icons/icon-192x192.png": "ed92072c843111fd0399b985b3605d20ae40b053",
+    "/NZ_places_with_dietary_options/icons/icon-384x384.png": "5058a9984215c3259c3945e74240547e010f5d1f",
+    "/NZ_places_with_dietary_options/icons/icon-512x512.png": "d15968aece4c30964a5157100f035fcc538badb8",
+    "/NZ_places_with_dietary_options/icons/icon-72x72.png": "1ebf62d1e9562e47723406af6d31b3b5372d1d4a",
+    "/NZ_places_with_dietary_options/icons/icon-96x96.png": "02888e2fdcff6c46d8b4528b53fda040ae28c56c",
+    "/NZ_places_with_dietary_options/index.html": "df97cf980dbcc1aa16f182808acaf828ca054966",
+    "/NZ_places_with_dietary_options/main-3YZJNTWL.js": "857a59616d08d02c0d243c13f73313a90a83c549",
+    "/NZ_places_with_dietary_options/manifest.webmanifest": "b4c501704086ea267ba1d6850f03b71841951233",
+    "/NZ_places_with_dietary_options/polyfills-6EAL64PA.js": "d874147a12a6570d9b44e99935e9de8b7f3cabbc",
+    "/NZ_places_with_dietary_options/styles-IH3YBUOV.css": "889367b3f7073389496672bd22673cb1df768008"
   },
   "navigationUrls": [
     {
