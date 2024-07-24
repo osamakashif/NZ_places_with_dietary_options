@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1682143229565,
-  "index": "https://osamakashif.github.io/NZ_places_with_dietary_options/index.html",
+  "timestamp": 1721820823863,
+  "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/favicon.ico",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/index.html",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/main.617f026d06ecfe26.js",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/manifest.webmanifest",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/polyfills.8406f9c24344eb0b.js",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/runtime.304f2f8d4f11c627.js",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/styles.56b3692a23a8a2f9.css"
+        "/favicon.ico",
+        "/index.html",
+        "/main-3YZJNTWL.js",
+        "/manifest.webmanifest",
+        "/polyfills-6EAL64PA.js",
+        "/styles-IH3YBUOV.css"
       ],
       "patterns": []
     },
@@ -29,45 +28,34 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/android-chrome-192x192.png",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/android-chrome-512x512.png",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/apple-touch-icon.png",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/favicon-16x16.png",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/favicon-32x32.png",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-128x128.png",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-144x144.png",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-152x152.png",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-192x192.png",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-384x384.png",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-512x512.png",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-72x72.png",
-        "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-96x96.png"
+        "/icons/icon-128x128.png",
+        "/icons/icon-144x144.png",
+        "/icons/icon-152x152.png",
+        "/icons/icon-192x192.png",
+        "/icons/icon-384x384.png",
+        "/icons/icon-512x512.png",
+        "/icons/icon-72x72.png",
+        "/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/android-chrome-192x192.png": "ed92072c843111fd0399b985b3605d20ae40b053",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/android-chrome-512x512.png": "d15968aece4c30964a5157100f035fcc538badb8",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/apple-touch-icon.png": "dc22ade1b6989b5765809e08cbaf5464cea5acfb",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/favicon-16x16.png": "8e54bd6358400dd6ad4c947df08c0a104801f9f8",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/favicon-32x32.png": "2f667609d67412dce3c8eec6afcffa999ba5cf55",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-128x128.png": "3a87a96321173824a40745f492b30f25fe350b29",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-144x144.png": "4a7f9913aba4d1401559963f788be8f57eab0737",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-152x152.png": "f41500437e06f637370138f5600ad0e5b69fc9e7",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-192x192.png": "ed92072c843111fd0399b985b3605d20ae40b053",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-384x384.png": "5058a9984215c3259c3945e74240547e010f5d1f",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-512x512.png": "d15968aece4c30964a5157100f035fcc538badb8",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-72x72.png": "1ebf62d1e9562e47723406af6d31b3b5372d1d4a",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/assets/icons/icon-96x96.png": "02888e2fdcff6c46d8b4528b53fda040ae28c56c",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/favicon.ico": "e7957ff832cb821589360a02c3db5cbdf0b4399e",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/index.html": "da8f127b186d8ecb1c12a3ab736a919f59165b06",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/main.617f026d06ecfe26.js": "72d9400ef18fc0790f9472a9b2167c23ad1a55ca",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/manifest.webmanifest": "8895132fe0a51b242c82ede36eb0e8aead59429c",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/polyfills.8406f9c24344eb0b.js": "4666ff22e0658ca66aaf31b11e744f9c7eb79f8b",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/runtime.304f2f8d4f11c627.js": "f9644c541d1621ada53e2f6b31637ad2f35ed4bb",
-    "https://osamakashif.github.io/NZ_places_with_dietary_options/styles.56b3692a23a8a2f9.css": "1a9dcc8edc79e8c50b446940f0f0e308b0d5acb4"
+    "/favicon.ico": "e7957ff832cb821589360a02c3db5cbdf0b4399e",
+    "/icons/icon-128x128.png": "3a87a96321173824a40745f492b30f25fe350b29",
+    "/icons/icon-144x144.png": "4a7f9913aba4d1401559963f788be8f57eab0737",
+    "/icons/icon-152x152.png": "f41500437e06f637370138f5600ad0e5b69fc9e7",
+    "/icons/icon-192x192.png": "ed92072c843111fd0399b985b3605d20ae40b053",
+    "/icons/icon-384x384.png": "5058a9984215c3259c3945e74240547e010f5d1f",
+    "/icons/icon-512x512.png": "d15968aece4c30964a5157100f035fcc538badb8",
+    "/icons/icon-72x72.png": "1ebf62d1e9562e47723406af6d31b3b5372d1d4a",
+    "/icons/icon-96x96.png": "02888e2fdcff6c46d8b4528b53fda040ae28c56c",
+    "/index.html": "790dde1dd6167f199a477aaa4c5309112553d9e2",
+    "/main-3YZJNTWL.js": "857a59616d08d02c0d243c13f73313a90a83c549",
+    "/manifest.webmanifest": "b4c501704086ea267ba1d6850f03b71841951233",
+    "/polyfills-6EAL64PA.js": "d874147a12a6570d9b44e99935e9de8b7f3cabbc",
+    "/styles-IH3YBUOV.css": "889367b3f7073389496672bd22673cb1df768008"
   },
   "navigationUrls": [
     {
