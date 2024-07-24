@@ -10,7 +10,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test --no-watch --no-progress --browsers=ChromeHeadless"
+    "test": "ng test --no-watch --no-progress --browsers=ChromeHeadless",
+    "gh-deploy": "ng deploy --repo=https://github.com/osamakashif/NZ_places_with_dietary_options.git --base-href=/NZ_places_with_dietary_options/"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,7 @@
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
     "@angular/service-worker": "^18.0.0",
+    "angular-cli-ghpages": "^2.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
